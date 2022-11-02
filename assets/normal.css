@@ -248,17 +248,17 @@ left: calc(-24vw);
 40%{
     opacity: 1;
     top: 770px;
-    left: calc(24vw);
+    left: calc(-16vw);
 }
 50%{
     opacity: 1;
     top: 820px;
-    left: calc(32vw);
+    left: calc(-24vw);
 }
 60%{
 opacity: 0;
 top: 820px;
-left: calc(32vw);
+left: calc(-24vw);
 }
 85%{
     opacity: 0;
