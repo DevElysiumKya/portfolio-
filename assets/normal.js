@@ -155,7 +155,7 @@ const reactecno = () => {
     theme = 4;
 }
 const matecno = () => {
-    document.getElementById('theme').textContent="Tema MATERIALIZE";
+    document.getElementById('theme').textContent="Tema MATE";
     style.setProperty('--bg-purple', 'linear-gradient(45deg, #fab 30%, #d77 30%, #d77 90%, #fab 90%)');
     style.setProperty('--bg-svg', '#d77');
     style.setProperty('--svg-procces', '#fab');
