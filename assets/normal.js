@@ -1,9 +1,9 @@
-ScrollReveal().reveal('.tecno', {delay: 40, reset: true, interval: 100, scale: 0.1, rotate: {
+ScrollReveal().reveal('.tecno', {reset: true, interval: 100, scale: 0.1, rotate: {
     x: 45,
     y: 80,
     z: 20
 }});
-ScrollReveal().reveal('.procces-idea', {delay: 40, reset: true, interval: 200,distance: '100px'});
+ScrollReveal().reveal('.procces-idea', {reset: true, interval: 200,distance: '100px'});
 
 const style = document.documentElement.style
 const htmltecno = () => {
