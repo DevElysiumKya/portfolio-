@@ -4,8 +4,88 @@ ScrollReveal().reveal('.tecno', {delay:300, interval: 100, scale: 0.1, rotate: {
     z: 20
 }});
 ScrollReveal().reveal('.procces-idea', {reset: true, interval: 200,distance: '100px'});
-
+var theme = 12;
 const style = document.documentElement.style
+function left() {
+    switch (theme){
+        case 1:
+            pstecno();
+        break;
+        case 2:
+            htmltecno();
+        break;
+        case 3:
+            csstecno();
+        break;
+        case 4:
+            jstecno();
+        break;
+        case 5:
+            reactecno();
+        break;
+        case 6:
+            matecno();
+        break;
+        case 7:
+            svgtecno();
+        break;
+        case 8:
+            gitecno();
+        break;
+        case 9:
+            githubtecno();
+        break;
+        case 10:
+            vbtecno();
+        break;
+        case 11:
+            mysqltecno();
+        break;
+        case 12:
+            aitecno();
+        break;
+    }
+}
+function right() {
+switch (theme){
+    case 1:
+        csstecno();
+    break;
+    case 2:
+        jstecno();
+    break;
+    case 3:
+        reactecno();
+    break;
+    case 4:
+        matecno();
+    break;
+    case 5:
+        svgtecno();
+    break;
+    case 6:
+        gitecno();
+    break;
+    case 7:
+        githubtecno();
+    break;
+    case 8:
+        vbtecno();
+    break;
+    case 9:
+        mysqltecno();
+    break;
+    case 10:
+        aitecno();
+    break;
+    case 11:
+        pstecno();
+    break;
+    case 12:
+        htmltecno();
+    break;
+}
+}
 const htmltecno = () => {
     document.getElementById('theme').textContent="Tema HTML";
     style.setProperty('--bg-purple', '#b41');
@@ -21,6 +101,7 @@ const htmltecno = () => {
     document.getElementById('h2-title').style.color='#b41';
     document.getElementById('svgdevuwu').style.color='#000';
     document.getElementById('svgdevuwu2').style.color='#000';
+    theme = 1;
 }
 const csstecno = () => {
     document.getElementById('theme').textContent="Tema CSS";
@@ -37,6 +118,7 @@ const csstecno = () => {
     document.getElementById('h2-title').style.color='#09d';
     document.getElementById('svgdevuwu').style.color='#000';
     document.getElementById('svgdevuwu2').style.color='#000';
+    theme = 2;
 }
 const jstecno = () => {
     document.getElementById('theme').textContent="Tema JS";
@@ -53,6 +135,7 @@ const jstecno = () => {
     document.getElementById('h2-title').style.color='#dc2';
     document.getElementById('svgdevuwu').style.color='#000';
     document.getElementById('svgdevuwu2').style.color='#000';
+    theme = 3;
 }
 const reactecno = () => {
     document.getElementById('theme').textContent="Tema REACT";
@@ -69,6 +152,7 @@ const reactecno = () => {
     document.getElementById('h2-title').style.color='#333';
     document.getElementById('svgdevuwu').style.color='#000';
     document.getElementById('svgdevuwu2').style.color='#000';
+    theme = 4;
 }
 const matecno = () => {
     document.getElementById('theme').textContent="Tema MATERIALIZE";
@@ -85,6 +169,7 @@ const matecno = () => {
     document.getElementById('h2-title').style.color='#fff';
     document.getElementById('svgdevuwu').style.color='#fff';
     document.getElementById('svgdevuwu2').style.color='#fff';
+    theme = 5;
 }
 const svgtecno = () => {
     document.getElementById('theme').textContent="Tema SVG";
@@ -101,6 +186,7 @@ const svgtecno = () => {
     document.getElementById('h2-title').style.color='#71d';
     document.getElementById('svgdevuwu').style.color='#000';
     document.getElementById('svgdevuwu2').style.color='#000';
+    theme = 6;
 }
 const gitecno = () => {
     document.getElementById('theme').textContent="Tema GIT";
@@ -117,6 +203,7 @@ const gitecno = () => {
     document.getElementById('h2-title').style.color='#d53';
     document.getElementById('svgdevuwu').style.color='#000';
     document.getElementById('svgdevuwu2').style.color='#000';
+    theme = 7;
 }
 const githubtecno = () => {
     document.getElementById('theme').textContent="Tema GITHUB";
@@ -133,6 +220,7 @@ const githubtecno = () => {
     document.getElementById('h2-title').style.color='#ddd';
     document.getElementById('svgdevuwu').style.color='#fff';
     document.getElementById('svgdevuwu2').style.color='#fff';
+    theme = 8;
 }
 const mysqltecno = () => {
     document.getElementById('theme').textContent="Tema MySQL";
@@ -149,6 +237,7 @@ const mysqltecno = () => {
     document.getElementById('h2-title').style.color='#069';
     document.getElementById('svgdevuwu').style.color='#000';
     document.getElementById('svgdevuwu2').style.color='#000';
+    theme = 10;
 }
 const vbtecno = () => {
     document.getElementById('theme').textContent="Tema VB.NET";
@@ -165,9 +254,10 @@ const vbtecno = () => {
     document.getElementById('h2-title').style.color='#54b';
     document.getElementById('svgdevuwu').style.color='#000';
     document.getElementById('svgdevuwu2').style.color='#000';
+    theme = 9;
 }
 const aitecno = () => {
-    document.getElementById('theme').textContent="Tema ILUSTRATOR";
+    document.getElementById('theme').textContent="Tema AI";
     style.setProperty('--bg-purple', '#210');
     style.setProperty('--bg-svg', '#f80');
     style.setProperty('--svg-procces', '#f80');
@@ -181,9 +271,10 @@ const aitecno = () => {
     document.getElementById('h2-title').style.color='#fff';
     document.getElementById('svgdevuwu').style.color='#fff';
     document.getElementById('svgdevuwu2').style.color='#fff';
+    theme = 11;
 }
 const pstecno = () => {
-    document.getElementById('theme').textContent="Tema PHOTOSHOP";
+    document.getElementById('theme').textContent="Tema Adobe PS";
     style.setProperty('--bg-purple', '#012');
     style.setProperty('--bg-svg', '#0ae');
     style.setProperty('--svg-procces', '#0ae');
@@ -197,4 +288,5 @@ const pstecno = () => {
     document.getElementById('h2-title').style.color='#fff';
     document.getElementById('svgdevuwu').style.color='#fff';
     document.getElementById('svgdevuwu2').style.color='#fff';
+    theme = 12;
 }
