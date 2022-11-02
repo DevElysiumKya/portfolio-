@@ -4,7 +4,7 @@ ScrollReveal().reveal('.tecno', {delay:300, interval: 100, scale: 0.1, rotate: {
     z: 20
 }});
 ScrollReveal().reveal('.procces-idea', {reset: true, interval: 200,distance: '100px'});
-var theme = 12;
+var theme = 6;
 const style = document.documentElement.style
 function left() {
     switch (theme){
