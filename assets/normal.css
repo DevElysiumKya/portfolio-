@@ -19,8 +19,10 @@
     font-family: var(--mone);
     justify-content: center;
     text-align: center;
+    transition: 0.3s all;
 }
 body {
+    background: var(--bg-footer);
     color: var(--bg-white);
 }
 header {
@@ -35,6 +37,7 @@ header {
 }
 #theme{
     position:relative;
+    text-shadow: var(--bg-purple) 3px 0px 0px, var(--bg-purple) 2.83487px 0.981584px 0px, var(--bg-purple) 2.35766px 1.85511px 0px, var(--bg-purple) 1.62091px 2.52441px 0px, var(--bg-purple) 0.705713px 2.91581px 0px,var(--bg-purple) -0.287171px 2.98622px 0px, var(--bg-purple) -1.24844px 2.72789px 0px, var(--bg-purple) -2.07227px 2.16926px 0px, var(--bg-purple) -2.66798px 1.37182px 0px, var(--bg-purple) -2.96998px 0.42336px 0px, var(--bg-purple) -2.94502px -0.571704px 0px, var(--bg-purple) -2.59586px -1.50383px 0px, var(--bg-purple) -1.96093px -2.27041px 0px, var(--bg-purple) -1.11013px -2.78704px 0px,var(--bg-purple) -0.137119px -2.99686px 0px, var(--bg-purple) 0.850987px -2.87677px 0px, var(--bg-purple) 1.74541px -2.43999px 0px, var(--bg-purple) 2.44769px -1.73459px 0px, var(--bg-purple) 2.88051px -0.838247px 0px;
 }
 .content {
     -webkit-user-select: none;
@@ -73,13 +76,14 @@ p {
 span {
     text-align: justify;    
     font-family: var(--fresca);
+    color: #fff;
     font-size: 1.8rem;
     text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px, rgb(0, 0, 0) 2.35766px 1.85511px 0px, rgb(0, 0, 0) 1.62091px 2.52441px 0px, rgb(0, 0, 0) 0.705713px 2.91581px 0px, rgb(0, 0, 0) -0.287171px 2.98622px 0px, rgb(0, 0, 0) -1.24844px 2.72789px 0px, rgb(0, 0, 0) -2.07227px 2.16926px 0px, rgb(0, 0, 0) -2.66798px 1.37182px 0px, rgb(0, 0, 0) -2.96998px 0.42336px 0px, rgb(0, 0, 0) -2.94502px -0.571704px 0px, rgb(0, 0, 0) -2.59586px -1.50383px 0px, rgb(0, 0, 0) -1.96093px -2.27041px 0px, rgb(0, 0, 0) -1.11013px -2.78704px 0px, rgb(0, 0, 0) -0.137119px -2.99686px 0px, rgb(0, 0, 0) 0.850987px -2.87677px 0px, rgb(0, 0, 0) 1.74541px -2.43999px 0px, rgb(0, 0, 0) 2.44769px -1.73459px 0px, rgb(0, 0, 0) 2.88051px -0.838247px 0px;
 }
 #kyari-img {
     width: 90%;
     max-width: 400px;
-    border-bottom: solid 4px black;
+    border-bottom: solid 5px var(--bg-footer);
 }
 .flexi {
     margin-top: 40px;
@@ -155,7 +159,10 @@ span {
     animation: rotatecno 2s infinite;
 }
 @keyframes rotatecno {
-    40%{
+    20%{
+        rotate: 0deg;
+    }
+    50%{
         rotate: 10deg;
     }
     80% {
@@ -167,7 +174,104 @@ span {
     flex-flow: row wrap;
     justify-content: space-between;
 }
-
+.floating {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: var(--bg-svg);
+    text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px, rgb(0, 0, 0) 2.35766px 1.85511px 0px, rgb(0, 0, 0) 1.62091px 2.52441px 0px, rgb(0, 0, 0) 0.705713px 2.91581px 0px, rgb(0, 0, 0) -0.287171px 2.98622px 0px, rgb(0, 0, 0) -1.24844px 2.72789px 0px, rgb(0, 0, 0) -2.07227px 2.16926px 0px, rgb(0, 0, 0) -2.66798px 1.37182px 0px, rgb(0, 0, 0) -2.96998px 0.42336px 0px, rgb(0, 0, 0) -2.94502px -0.571704px 0px, rgb(0, 0, 0) -2.59586px -1.50383px 0px, rgb(0, 0, 0) -1.96093px -2.27041px 0px, rgb(0, 0, 0) -1.11013px -2.78704px 0px, rgb(0, 0, 0) -0.137119px -2.99686px 0px, rgb(0, 0, 0) 0.850987px -2.87677px 0px, rgb(0, 0, 0) 1.74541px -2.43999px 0px, rgb(0, 0, 0) 2.44769px -1.73459px 0px, rgb(0, 0, 0) 2.88051px -0.838247px 0px;
+    font-size: 1.5rem;
+    position: relative;
+    z-index: 10;
+    top: 300px;
+    left: calc(-24vw);
+    opacity: 1;
+}
+@media (max-width: 780px){
+.floating{
+    animation: floating2 12s infinite;
+}
+}
+@media (min-width: 780px){
+.floating{
+    animation: floating 12s infinite;
+}
+}
+@keyframes floating {
+10% {
+opacity: 0;
+top: 300px;
+left: calc(-24vw);
+}
+35%{
+    opacity: 0;
+}
+40%{
+    opacity: 1;
+    top: 470px;
+    left: calc(-16vw);
+}
+50%{
+    opacity: 1;
+    top: 520px;
+    left: calc(-14vw);
+}
+60%{
+opacity: 0;
+top: 520px;
+left: calc(-14vw);
+}
+85%{
+    opacity: 0;
+}
+90%{
+    opacity: 1;
+    top: 350px;
+    left: calc(-22vw);
+}
+100%{
+    top: 300px;
+    left: calc(-24vw);
+}
+}
+@keyframes floating2 {
+10% {
+opacity: 0;
+top: 300px;
+left: calc(-24vw);
+}
+35%{
+    opacity: 0;
+}
+40%{
+    opacity: 1;
+    top: 770px;
+    left: calc(24vw);
+}
+50%{
+    opacity: 1;
+    top: 820px;
+    left: calc(32vw);
+}
+60%{
+opacity: 0;
+top: 820px;
+left: calc(32vw);
+}
+85%{
+    opacity: 0;
+}
+90%{
+    opacity: 1;
+    top: 400px;
+    left: calc(-16vw);
+}
+100%{
+    top: 300px;
+    left: calc(-24vw);
+}
+}
 /*------------------*/
 /* SECTION PROYECTS */
 /*------------------*/
@@ -186,10 +290,9 @@ span {
     justify-content: space-around;
 }
 .proyects-card {
-    background: white;
+    background: var(--bg-footer2);
     width: 340px;
     max-height: 143px;
-    box-shadow: 0px 2px 4px black;
     margin: 10px;
     border-radius: 20px;
     overflow: hidden;
@@ -207,32 +310,32 @@ span {
 h4 {
     font-family: var(--press2p);
     font-size: 2rem;
-    color: black;
+    color: var(--bg-footer);
 }
 .proyects-card p {
     border-bottom: 0;
     margin: 8px;
     font-size: 1.4rem;
-    color: black;
-    padding-bottom: 0px;
+    color: var(--bg-footer);
+    padding-bottom: 10px;
 }
 .link-proyect {
+    display: block-inline;
     font-size: 1.6rem;
     text-decoration:none;
     padding: 8px 20px;
     border: solid 2px black;
-    border-radius: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .link-proyect:visited, .link-proyect:link, .link-proyect:active, .link-proyect:focus {
-    background: var(--bg-purple);
-    color:var(--bg-white);
-    text-shadow: 0px 0px 4px var(--bg-white);
+    background: var(--bg-footer);
+    color:var(--bg-footer2);
 }
 .link-proyect:hover{ 
-    background: var(--bg-white);
-    color: var(--bg-purple);
-    text-shadow: 1px 1px 3px var(--bg-white);
+    padding: 12px 24px;
+    border-radius: 28px;
+    background: var(--bg-purple);
+    color: #fff;
 }
 /*------------------*/
 /*      FOOTER      */
@@ -246,7 +349,7 @@ footer {
 }
 .footer-title {
     color: var(--bg-footer2); 
-    padding-top: 30px;
+    padding-top: 25px;
     padding-bottom: 5px;
 }
 .redes {
@@ -355,7 +458,7 @@ p span, .procces-idea {
 }
 #kyari-img {
     max-width: 640px;
-    border-bottom: solid 8px black;
+    border-bottom: solid 8px var(--bg-footer);
 }
     .f{
         width: 46%;

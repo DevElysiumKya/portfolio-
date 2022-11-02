@@ -1,4 +1,4 @@
-ScrollReveal().reveal('.tecno', {reset: true, interval: 100, scale: 0.1, rotate: {
+ScrollReveal().reveal('.tecno', {delay:300, interval: 100, scale: 0.1, rotate: {
     x: 45,
     y: 80,
     z: 20
@@ -147,6 +147,22 @@ const mysqltecno = () => {
     style.setProperty('--bg-opacityP', 'rgb(206,139,44,0.6)');
     document.getElementById('theme').style.color='#09d';
     document.getElementById('h2-title').style.color='#c93';
+    document.getElementById('svgdevuwu').style.color='#000';
+    document.getElementById('svgdevuwu2').style.color='#000';
+}
+const mysql2tecno = () => {
+    document.getElementById('theme').textContent="Tema MySQL";
+    style.setProperty('--bg-purple', '#069');
+    style.setProperty('--bg-svg', '#c93');
+    style.setProperty('--svg-procces', '#c93');
+    style.setProperty('--bg-white', '#fff');
+    style.setProperty('--bg-black', '#000');
+    style.setProperty('--bg-footer', '#222');
+    style.setProperty('--bg-footer2', '#c93');
+    style.setProperty('--bg-h3', '#c93');
+    style.setProperty('--bg-opacityP', 'rgb(206,139,44,0.6)');
+    document.getElementById('theme').style.color='#09d';
+    document.getElementById('h2-title').style.color='#069';
     document.getElementById('svgdevuwu').style.color='#000';
     document.getElementById('svgdevuwu2').style.color='#000';
 }
