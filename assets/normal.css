@@ -79,7 +79,7 @@ h3 {
     font-size: 1.8rem;
     color: var(--bg-h3);
     text-shadow: 3px 3px 0px black;
-    padding-block: 40px;
+    padding-block: 30px;
 }
 p {
     text-align: justify;    
@@ -124,7 +124,7 @@ span {
     background: var(--bg-purple);
 }
 
-#about {
+#about, ul {
  font-size: 1.4rem;   
 }
 .f{
@@ -172,6 +172,8 @@ span {
     cursor: pointer;
 }
 .tecno:hover {
+    position: relative;
+    z-index: 30;
     animation: rotatecno 2s infinite;
 }
 @keyframes rotatecno {
@@ -257,10 +259,10 @@ opacity: 0;
 top: 300px;
 left: calc(-24vw);
 }
-35%{
+40%{
     opacity: 0;
 }
-40%{
+45%{
     opacity: 1;
     top: 770px;
     left: calc(-16vw);
@@ -275,10 +277,10 @@ opacity: 0;
 top: 820px;
 left: calc(-24vw);
 }
-85%{
+90%{
     opacity: 0;
 }
-90%{
+95%{
     opacity: 1;
     top: 400px;
     left: calc(-16vw);
@@ -308,7 +310,7 @@ left: calc(-24vw);
 .proyects-card {
     background: var(--bg-footer2);
     width: 340px;
-    max-height: 143px;
+    max-height: 140px;
     margin: 10px;
     border-radius: 20px;
     overflow: hidden;
@@ -352,6 +354,23 @@ h4 {
     border-radius: 28px;
     background: var(--bg-purple);
     color: #fff;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    text-align: justify;    
+}
+b {
+    color: var(--svg-procces);
+}
+#pin-1{
+    display: inline;
+    position:absolute;
+    cursor: pointer;
+}
+#pinned-1 {
+    color: #111;
 }
 /*------------------*/
 /*      FOOTER      */
@@ -397,14 +416,18 @@ footer {
     }
 }
 @media (max-width: 780px){
-    
+    b {
+        padding-top: 10px;
+        text-align: justify;
+        display: block;
+    }
 .redes {
     font-size: 1.4rem;
 }
 #svg-device,.theme-arrow {
     top:80px
 }
-    p, p span, #about, .proyects-card p {
+    p, p span, ul, .proyects-card p {
         font-size: 1.2rem;
     }
     .procces-idea {
@@ -466,7 +489,7 @@ h3 {
 p, p span {
     font-size: 3rem;
 }
-#about {
+#about,ul{
     font-size: 2rem;   
    }
 p span, .procces-idea {

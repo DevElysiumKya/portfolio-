@@ -208,12 +208,12 @@ const gitecno = () => {
 const githubtecno = () => {
     document.getElementById('theme').textContent="Tema GITHUB";
     style.setProperty('--bg-purple', '#000');
-    style.setProperty('--bg-svg', '#ccc');
+    style.setProperty('--bg-svg', '#333');
     style.setProperty('--svg-procces', 'white');
     style.setProperty('--bg-white', '#ccc');
     style.setProperty('--bg-black', '#000');
-    style.setProperty('--bg-footer', '#ccc');
-    style.setProperty('--bg-footer2', '#111');
+    style.setProperty('--bg-footer', '#111');
+    style.setProperty('--bg-footer2', '#ccc');
     style.setProperty('--bg-h3', '#fff');
     style.setProperty('--bg-opacityP', 'rgb(17,17,17,0.6)');
     document.getElementById('theme').style.color='#fff';
