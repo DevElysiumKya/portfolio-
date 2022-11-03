@@ -101,6 +101,8 @@ const htmltecno = () => {
     document.getElementById('h2-title').style.color='#b41';
     document.getElementById('svgdevuwu').style.color='#000';
     document.getElementById('svgdevuwu2').style.color='#000';
+    document.getElementById('h1-principal').style.textShadow='3px 3px 0px black';
+    document.getElementById('proyects-h3').style.textShadow='3px 2px 0px black';
     theme = 1;
 }
 const csstecno = () => {
@@ -118,6 +120,8 @@ const csstecno = () => {
     document.getElementById('h2-title').style.color='#09d';
     document.getElementById('svgdevuwu').style.color='#000';
     document.getElementById('svgdevuwu2').style.color='#000';
+    document.getElementById('h1-principal').style.textShadow='3px 3px 0px black';
+    document.getElementById('proyects-h3').style.textShadow='3px 2px 0px black';
     theme = 2;
 }
 const jstecno = () => {
@@ -135,6 +139,8 @@ const jstecno = () => {
     document.getElementById('h2-title').style.color='#dc2';
     document.getElementById('svgdevuwu').style.color='#000';
     document.getElementById('svgdevuwu2').style.color='#000';
+    document.getElementById('h1-principal').style.textShadow='0px 0px 2px black';
+    document.getElementById('proyects-h3').style.textShadow='0px 0px 2px black';
     theme = 3;
 }
 const reactecno = () => {
@@ -152,6 +158,8 @@ const reactecno = () => {
     document.getElementById('h2-title').style.color='#333';
     document.getElementById('svgdevuwu').style.color='#000';
     document.getElementById('svgdevuwu2').style.color='#000';
+    document.getElementById('h1-principal').style.textShadow='3px 3px 0px black';
+    document.getElementById('proyects-h3').style.textShadow='3px 2px 0px black';
     theme = 4;
 }
 const matecno = () => {
@@ -169,6 +177,8 @@ const matecno = () => {
     document.getElementById('h2-title').style.color='#fff';
     document.getElementById('svgdevuwu').style.color='#fff';
     document.getElementById('svgdevuwu2').style.color='#fff';
+    document.getElementById('h1-principal').style.textShadow='3px 3px 0px black';
+    document.getElementById('proyects-h3').style.textShadow='3px 2px 0px black';
     theme = 5;
 }
 const svgtecno = () => {
@@ -186,6 +196,8 @@ const svgtecno = () => {
     document.getElementById('h2-title').style.color='#71d';
     document.getElementById('svgdevuwu').style.color='#000';
     document.getElementById('svgdevuwu2').style.color='#000';
+    document.getElementById('h1-principal').style.textShadow='3px 3px 0px black';
+    document.getElementById('proyects-h3').style.textShadow='3px 2px 0px black';
     theme = 6;
 }
 const gitecno = () => {
@@ -203,6 +215,8 @@ const gitecno = () => {
     document.getElementById('h2-title').style.color='#d53';
     document.getElementById('svgdevuwu').style.color='#000';
     document.getElementById('svgdevuwu2').style.color='#000';
+    document.getElementById('h1-principal').style.textShadow='3px 3px 0px black';
+    document.getElementById('proyects-h3').style.textShadow='3px 2px 0px black';
     theme = 7;
 }
 const githubtecno = () => {
@@ -220,6 +234,8 @@ const githubtecno = () => {
     document.getElementById('h2-title').style.color='#ddd';
     document.getElementById('svgdevuwu').style.color='#fff';
     document.getElementById('svgdevuwu2').style.color='#fff';
+    document.getElementById('h1-principal').style.textShadow='3px 3px 0px black';
+    document.getElementById('proyects-h3').style.textShadow='3px 2px 0px black';
     theme = 8;
 }
 const mysqltecno = () => {
@@ -237,6 +253,8 @@ const mysqltecno = () => {
     document.getElementById('h2-title').style.color='#069';
     document.getElementById('svgdevuwu').style.color='#000';
     document.getElementById('svgdevuwu2').style.color='#000';
+    document.getElementById('h1-principal').style.textShadow='3px 3px 0px black';
+    document.getElementById('proyects-h3').style.textShadow='3px 2px 0px black';
     theme = 10;
 }
 const vbtecno = () => {
@@ -254,6 +272,8 @@ const vbtecno = () => {
     document.getElementById('h2-title').style.color='#54b';
     document.getElementById('svgdevuwu').style.color='#000';
     document.getElementById('svgdevuwu2').style.color='#000';
+    document.getElementById('h1-principal').style.textShadow='3px 3px 0px black';
+    document.getElementById('proyects-h3').style.textShadow='3px 2px 0px black';
     theme = 9;
 }
 const aitecno = () => {
@@ -271,6 +291,8 @@ const aitecno = () => {
     document.getElementById('h2-title').style.color='#fff';
     document.getElementById('svgdevuwu').style.color='#fff';
     document.getElementById('svgdevuwu2').style.color='#fff';
+    document.getElementById('h1-principal').style.textShadow='3px 3px 0px black';
+    document.getElementById('proyects-h3').style.textShadow='3px 2px 0px black';
     theme = 11;
 }
 const pstecno = () => {
@@ -288,5 +310,7 @@ const pstecno = () => {
     document.getElementById('h2-title').style.color='#fff';
     document.getElementById('svgdevuwu').style.color='#fff';
     document.getElementById('svgdevuwu2').style.color='#fff';
+    document.getElementById('h1-principal').style.textShadow='3px 3px 0px black';
+    document.getElementById('proyects-h3').style.textShadow='3px 2px 0px black';
     theme = 12;
 }
