@@ -4,8 +4,20 @@ ScrollReveal().reveal('.tecno', {delay:300, interval: 100, scale: 0.1, rotate: {
     z: 20
 }});
 ScrollReveal().reveal('.procces-idea', {reset: true, interval: 200,distance: '100px'});
+
+function showmenu() {
+    document.getElementById('menu').style.left='0';
+}
+function closemenu() {
+    document.getElementById('menu').style.left='-528px';
+}
+/*function language() {
+    document.getElementById('menu').style.left='-608px';
+} ON PROCESS*/
+
+/* SELECT THEME */
 var theme = 6;
-const style = document.documentElement.style
+const style = document.documentElement.style;
 function left() {
     switch (theme){
         case 1:
