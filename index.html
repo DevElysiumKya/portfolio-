@@ -9,7 +9,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--  CSS  -->
-        <link rel="stylesheet" href="./assets/normal.css"">
+        <link rel="stylesheet" href="./assets/normal.css">
          <!-- JAVASCRIPT-->
         <script src="./assets/scrollreveal.js"></script>
         <script src="./assets/normal.js" defer></script>
@@ -54,7 +54,7 @@
     <header>
         <div class="content">
             <h1 id="h1-principal" >Holis, soy Kyari!</h1>
-            <h2 id="h2-title">Front-End Developer Jr <svg id="svgdevuwu" width="36" height="26"><use xlink:href="#svgdev"></use></svg><svg id="svgdevuwu2" width="54" height="40"><use xlink:href="#svgdev"></use></svg></h2>
+                    <h2 id="h2-title">Front-End Developer <svg id="svgdevuwu" width="36"         height="26"><use xlink:href="#svgdev"></use></svg><svg id="svgdevuwu2" width="54" height="40"><use xlink:href="#svgdev"></use></svg></h2>
             <h3>Me gusta diseñar y codificar cosas bonitas</h3>
             <svg version="1.1" id="svg-device" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         viewBox="0 0 2493 1011" style="enable-background:new 0 0 2493 1011;" xml:space="preserve">
@@ -275,6 +275,17 @@
             <div class="theme-arrow"><div id="theme-left" onclick="left()">&#5130 </div><h4 id="theme"> Tema SVG </h4><div id="theme-left" onclick="right()"> &#5125</div></div>
         </div>
     </header>
+    <nav id="menu">
+        <a class="link-proyect" href="#html" onclick="closemenu()">Cerrar Menu</a>
+        <a class="link-proyect" href="#" onclick="closemenu()">Inicio</a>
+        <a class="link-proyect" href="#proyects" onclick="closemenu()">Proyectos</a>
+        <a class="link-proyect" href="#habilidades" onclick="closemenu()">Habilidades</a>
+        <a class="link-proyect" href="#aboutme" onclick="closemenu()">Sobre mí</a>
+        <!--<a class="link-proyect" href="#en" onclick="language()">Change to English</a>-->
+    </nav>
+    <div id="show-menu" onclick="showmenu()">
+        Menu
+    </div>
     <section class="flexi">
         <div class="f">
             <img id="kyari-img" src="./assets/0.png">
@@ -303,37 +314,47 @@
             </p>
         </div>
     </section>
-    <section class="proyects">
+    <section class="proyects" id="proyects">
         <h3 id="proyects-h3">Proyectos</h3>
         <div class="proyects-flexi">
             <div class="proyects-card">
+                <img class="proyects-card-img" src="./img/icon-koi.jpg">
+                <h4>KOI SQUAD</h4>
+                <p>Fan Page Humilde con toda la información de KOI eSports, equipo fundando por Ibai Llanos y Gerard Piqué.</p>
+                <a class="link-proyect" href="https://koisquad.netlify.app/" target="_blank">Visitar Web</a>
+            </div>
+            <!--<div class="proyects-card">
                 <img class="proyects-card-img" src="./img/icon-elysium.jpg">
                 <h4>Elysium</h4>
                 <p>Página creada para enseñar matemáticas mediante cursos interactivos con monas chinas.</p>
-                <a class="link-proyect" href="https://develysiumkya.github.io/">En proceso...</a>
-            </div>
+                <a class="link-proyect" href="https://develysiumkya.github.io/" target="_blank">En proceso...</a>
+            </div>-->
             <div class="proyects-card">
                 <img class="proyects-card-img" src="./img/icon-casadt.jpg">
                 <h4>La Casa De Toño</h4>
                 <p>Menu QR Digital creado para restaurante, usando Static QR Code con visitas ilimitadas.</p>
                 <img width="280px" height="280px" style="margin-bottom: 10px;"src="./img/qr-CasaDTGB.png">
-                <a class="link-proyect" href="https://develysiumkya.github.io/CasaDeTGB/">Visitar</a>
+                <a class="link-proyect" href="https://develysiumkya.github.io/CasaDeTGB/" target="_blank">Visitar</a>
             </div>
-            <div class="proyects-card">
+            <!--<div class="proyects-card">
                 <img class="proyects-card-img" src="./img/icon-mmh.jpg">
                 <h4>Mexican Market Halloween</h4>
                 <p>Versión de temporada de Halloween de una página con los servicios que ofrece una empresa Mexicana en USA, con acceso por código QR.</p>
                 <img width="280px" height="280px" style="margin-bottom: 10px;" src="./img/qr-Halloween.png">
-                <a class="link-proyect" href="https://develysiumkya.github.io/MexicanMarketHarrowing/">Visitar</a>
+                <a class="link-proyect" href="https://develysiumkya.github.io/MexicanMarketHarrowing/" target="_blank">Visitar</a>
             </div>
-    
+            <div class="proyects-card">
+                <img class="proyects-card-img" src="./img/lain-serial-experiments-lain.gif">
+                <h4>Proyecto TFT</h4>
+                <p>Aqui va mi proyecto de predicción del tft para llegar a challenger uwu</p>
+                <a class="link-proyect" href="#">En proceso...</a>
+            </div>-->
         </div>
     </section>
     <div class="floating"><svg width="38" height="38"><use xlink:href="#svghand"></use></svg>¡Click aqui!</div>
     <section class="about">
         <div class="f">
-            <h3>Tecnologías</h3>
-           
+            <h3 id="habilidades">Habilidades</h3>
             <div id="tecno">
                 <img class="tecno" src="./tecno/ICONHTML.png" onclick="htmltecno()">
                 <img class="tecno" src="./tecno/ICONCSS.png" onclick="csstecno()">
@@ -350,7 +371,7 @@
             </div>
         </div>
         <div class="f">
-            <h3>Logros académicos</h3>
+            <h3 >Logros académicos</h3>
             <ul>
                 <li>
                     <b>Bachiller | </b> Tec. en Diseño Gráfico
@@ -365,10 +386,10 @@
                     <b>Cursando actualmente | </b>Ing. Sistemas Computacionales 8° ciclo
                 </li>
             </ul>
-            <h3>Sobre mi</h3>
+            <h3 id="aboutme">Sobre mi</h3>
             <ul>
                 <li>
-                    Conocí la programación por los videojuegos, principalmente por el uso de World Edit de Warcraft III.
+                    Conocí la programación por los videojuegos, principalmente por el uso de Eventos en el World Edit de Warcraft III.
                 </li>
                 <li>
                     Mi mayor hobbie son los videojuegos y participo aveces en torneos competitivos de eSports.
@@ -386,21 +407,21 @@
         </div>
         <div>
             <h4 class="footer-title">Redes Sociales</h4> 
-            <a class="redes" href="https://www.pixiv.net/en/users/32283562">
-                <img width="20px" src="./img/redes-pixiv.png"> Pixiv</a><br>
-            <a class="redes" href="https://github.com/DevElysiumKya">
+            <a class="redes" href="https://www.pixiv.net/en/users/32283562" target="_blank">
+                <img width="20px" src="./img/redes-pixiv.png" > Pixiv</a><br>
+            <a class="redes" href="https://github.com/DevElysiumKya" target="_blank">
                 <img width="20px" src="./img/redes-github.png"> Github</a><br>
-            <a class="redes" href="https://www.facebook.com/Kyari.Dani">
+            <a class="redes" href="https://www.facebook.com/Kyari.Dani" target="_blank">
                 <img width="20px" src="./img/redes-facebook.png"> Facebook</a><br>
-            <a class="redes" href="https://www.youtube.com/channel/UCBi3KvDxd43-BOs126CH9Dg">
+            <a class="redes" href="https://www.youtube.com/channel/UCBi3KvDxd43-BOs126CH9Dg" target="_blank">
                 <img width="20px" src="./img/redes-youtube.png"> Youtube</a>
         </div>
         <div>
             <h4 class="footer-title">Contactame</h4>
                 <a class="redes" href="mailto:Dev.Elysium@protonmail.com">
                     <img width="20px" src="./img/redes-email.png"> Dev.Elysium@protonmail.com</a><br>
-                <a class="redes" href="">
-                    <img width="20px" src="./img/redes-what.png"> Aqui va un whatsapp unu</a> 
+                <a class="redes" href="http://wa.me/529134036414" target="_blank">
+                    <img width="20px" src="./img/redes-what.png"> +52 913 403 6414</a> 
         </div>
     </footer>
 </body>
