@@ -435,6 +435,9 @@ footer {
     flex-flow: row wrap;
     justify-content: space-around;
 }
+footer div {
+    min-width: 240px;
+}
 .footer-title {
     color: var(--bg-footer2); 
     padding-top: 25px;
